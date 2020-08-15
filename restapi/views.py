@@ -20,8 +20,6 @@ from botocore.exceptions import ClientError
 from urllib.request import urlopen
 import requests
 
-# s3.Object('mybucket', 'hello.txt').put(urlopen(url))
-
 
 def upload_file(file_name, bucket, object_name=None):
     if object_name is None:
