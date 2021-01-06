@@ -69,7 +69,7 @@ RUN apt-get update && \
     apt-get install --assume-yes default-mysql-server procps libmariadbclient-dev python-dev
 
 RUN usermod -d /var/lib/mysql mysql
-RUN apt-get install mysql-community-server
+# RUN apt-get install mysql-community-server
 COPY ./requirements.txt /code/requirements.txt
 RUN pip install -r /code/requirements.txt
 
